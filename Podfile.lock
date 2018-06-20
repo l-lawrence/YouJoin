@@ -17,6 +17,7 @@ PODS:
   - CRToast (0.0.9)
   - DACircularProgress (2.3.1)
   - IQKeyboardManager (4.0.9)
+  - Masonry (1.0.2)
   - MBProgressHUD (0.9.2)
   - MWPhotoBrowser (2.1.2):
     - DACircularProgress (~> 2.3)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - CRToast (~> 0.0.7)
   - IQKeyboardManager
+  - Masonry (~> 1.0.2)
   - MWPhotoBrowser
   - RESideMenu (~> 4.0.7)
   - SVProgressHUD
@@ -46,6 +48,7 @@ SPEC REPOS:
     - CRToast
     - DACircularProgress
     - IQKeyboardManager
+    - Masonry
     - MBProgressHUD
     - MWPhotoBrowser
     - RESideMenu
@@ -58,6 +61,7 @@ SPEC CHECKSUMS:
   CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
@@ -65,6 +69,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 8da99050c8aa09778a4fc67e3bfd8e3acafb843c
+PODFILE CHECKSUM: 73b7dacccf043d792fe0d340c34ad26640c26a63
 
 COCOAPODS: 1.5.3
