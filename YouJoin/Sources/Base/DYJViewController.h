@@ -17,4 +17,7 @@
 - (void)successHudWithText:(NSString *)text;
 - (void)failureHud;
 - (void)failureHudWithText:(NSString *)text;
+
+- (void)showSuccess:(NSString *)text;
+- (void)showFailure:(NSString *)text;
 @end

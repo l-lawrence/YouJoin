@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^successBlock)(id responseString);
+typedef void (^successBlock)(id response);
 typedef void (^failureBlock)(NSError *error);
 
 @interface DYJNetworkManager : NSObject

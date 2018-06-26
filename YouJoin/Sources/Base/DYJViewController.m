@@ -33,6 +33,7 @@
 }
 
 - (void)successHudWithText:(NSString *)text {
+    [SVProgressHUD dismiss];
     [SVProgressHUD showSuccessWithStatus:text];
 }
 
@@ -41,7 +42,16 @@
 }
 
 - (void)failureHudWithText:(NSString *)text {
+    [SVProgressHUD dismiss];
     [SVProgressHUD showErrorWithStatus:text];
+}
+
+- (void)showSuccess:(NSString *)text {
+    [self successHudWithText:text];
+}
+
+- (void)showFailure:(NSString *)text {
+    [self failureHudWithText:text];
 }
 
 @end

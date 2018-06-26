@@ -41,12 +41,24 @@ static AFHTTPSessionManager *manager;
         if (success && responseObject) {
             NSDictionary *responseDict = [self getFixDict:responseObject];
             NSLog(@"post %@, responseDict = %@", urlStr, responseDict);
-            success(responseObject);
+            if ([[NSThread currentThread] isMainThread]) {
+                success(responseDict);
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    success(responseDict);
+                });
+            }
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (failure && error) {
             NSLog(@"post %@, error = %@", urlStr, error);
-            failure(error);
+            if ([[NSThread currentThread] isMainThread]) {
+                failure(error);
+            } else {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    failure(error);
+                });
+            }
         }
     }];
 }

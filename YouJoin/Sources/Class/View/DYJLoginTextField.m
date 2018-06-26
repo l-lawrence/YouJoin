@@ -41,7 +41,8 @@
     field.layer.borderColor = [UIColor lightGrayColor].CGColor;
     field.autocorrectionType = UITextAutocorrectionTypeNo;
     field.tintColor = kBlueColor;
-    field.clearButtonMode = UITextFieldViewModeAlways;
+    field.clearButtonMode = UITextFieldViewModeWhileEditing;
+    field.autocapitalizationType = UITextAutocapitalizationTypeNone;
     return field;
 }
 

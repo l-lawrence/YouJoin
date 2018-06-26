@@ -41,9 +41,11 @@
     CGFloat fieldH = 40;
     DYJLoginTextField *usernameField = [[DYJLoginTextField alloc]initWithFrame:CGRectMake((screenW - fieldW) / 2, screenH * 0.5, fieldW, fieldH)];
     [self.view addSubview:usernameField];
+    usernameField.placeholder = @"username";
     self.usernameField = usernameField;
     
     DYJLoginTextField *passwordField = [[DYJLoginTextField alloc]initWithFrame:CGRectMake(CGRectGetMinX(usernameField.frame), CGRectGetMaxY(usernameField.frame) + 5, fieldW, fieldH)];
+    passwordField.placeholder = @"password";
     passwordField.secureTextEntry = YES;
     [self.view addSubview:passwordField];
     self.passwordField = passwordField;
@@ -64,14 +66,6 @@
 #pragma mark - interface
 - (void)showLoading {
     [self showLoadingWithText:@"登录中..."];
-}
-
-- (void)showSuccess:(NSString *)text {
-    [self successHudWithText:text];
-}
-
-- (void)showFailure:(NSString *)text {
-    [self failureHudWithText:text];
 }
 
 - (void)didReceiveMemoryWarning {

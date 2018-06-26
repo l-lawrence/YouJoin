@@ -7,7 +7,10 @@
 //
 
 #import "DYJViewController.h"
+#import "RegisterPresenter.h"
 
 @interface RegisterPage : DYJViewController
+
+@property (nonatomic,strong) RegisterPresenter *presenter;
 
 @end

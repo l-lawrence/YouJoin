@@ -17,6 +17,8 @@
 		045E456020DAE60F009BB32A /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E455F20DAE60F009BB32A /* LoginPresenter.m */; };
 		045E456720DAE732009BB32A /* LoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E456620DAE732009BB32A /* LoginInteractor.m */; };
 		045E456B20DAEB4B009BB32A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E456A20DAEB4B009BB32A /* NSString+MD5.m */; };
+		0490E1F620E2ABA30025033B /* RegisterPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490E1F520E2ABA30025033B /* RegisterPresenter.m */; };
+		0490E1F920E2ABB90025033B /* RegisterInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490E1F820E2ABB90025033B /* RegisterInteractor.m */; };
 		04C352CD20C42CEA00ED2A04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C352CC20C42CEA00ED2A04 /* AppDelegate.m */; };
 		04C352D520C42CEA00ED2A04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C352D420C42CEA00ED2A04 /* Assets.xcassets */; };
 		04C352D820C42CEA00ED2A04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C352D620C42CEA00ED2A04 /* LaunchScreen.storyboard */; };
@@ -72,6 +74,12 @@
 		045E456920DAEB4B009BB32A /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		045E456A20DAEB4B009BB32A /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		045E456C20DAF019009BB32A /* LoginInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginInterface.h; sourceTree = "<group>"; };
+		0490E1F420E2ABA30025033B /* RegisterPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterPresenter.h; sourceTree = "<group>"; };
+		0490E1F520E2ABA30025033B /* RegisterPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterPresenter.m; sourceTree = "<group>"; };
+		0490E1F720E2ABB90025033B /* RegisterInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterInteractor.h; sourceTree = "<group>"; };
+		0490E1F820E2ABB90025033B /* RegisterInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterInteractor.m; sourceTree = "<group>"; };
+		0490E1FA20E2AE820025033B /* RegisterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterInterface.h; sourceTree = "<group>"; };
+		0490E1FB20E2AEA70025033B /* BaseInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInterface.h; sourceTree = "<group>"; };
 		04C352C820C42CEA00ED2A04 /* YouJoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouJoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C352CB20C42CEA00ED2A04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04C352CC20C42CEA00ED2A04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -170,6 +178,8 @@
 			children = (
 				045E455E20DAE60F009BB32A /* LoginPresenter.h */,
 				045E455F20DAE60F009BB32A /* LoginPresenter.m */,
+				0490E1F420E2ABA30025033B /* RegisterPresenter.h */,
+				0490E1F520E2ABA30025033B /* RegisterPresenter.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -179,6 +189,8 @@
 			children = (
 				045E456520DAE732009BB32A /* LoginInteractor.h */,
 				045E456620DAE732009BB32A /* LoginInteractor.m */,
+				0490E1F720E2ABB90025033B /* RegisterInteractor.h */,
+				0490E1F820E2ABB90025033B /* RegisterInteractor.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -196,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				045E456C20DAF019009BB32A /* LoginInterface.h */,
+				0490E1FA20E2AE820025033B /* RegisterInterface.h */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -376,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				045E456D20DAF021009BB32A /* Login */,
+				0490E1FB20E2AEA70025033B /* BaseInterface.h */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -654,6 +668,7 @@
 				04C352DB20C42CEA00ED2A04 /* main.m in Sources */,
 				045E454A20DAD1EC009BB32A /* DYJNavigationViewController.m in Sources */,
 				045E456B20DAEB4B009BB32A /* NSString+MD5.m in Sources */,
+				0490E1F920E2ABB90025033B /* RegisterInteractor.m in Sources */,
 				04C3532020C43CB800ED2A04 /* DYJLoginTextField.m in Sources */,
 				04C352CD20C42CEA00ED2A04 /* AppDelegate.m in Sources */,
 				045E454D20DAD33F009BB32A /* DYJNetworkManager.m in Sources */,
@@ -662,6 +677,7 @@
 				045E454720DACF7F009BB32A /* HomePage.m in Sources */,
 				045E455320DAD3E6009BB32A /* DYJLoginButton.m in Sources */,
 				04C3531320C43B5100ED2A04 /* DYJUser.m in Sources */,
+				0490E1F620E2ABA30025033B /* RegisterPresenter.m in Sources */,
 				045E456020DAE60F009BB32A /* LoginPresenter.m in Sources */,
 				04C3531D20C43C8E00ED2A04 /* RegisterPage.m in Sources */,
 				045E456720DAE732009BB32A /* LoginInteractor.m in Sources */,
